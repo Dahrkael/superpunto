@@ -20,7 +20,7 @@ using namespace std;
 #define RANDESP ((double)rand()/(double)RAND_MAX) 
 #define PI2 3.1415*2.0
 */
-double pow(double x, int n);
+//double pow(double x, int n);
 double dist(const vector<double> &a, const vector<double> &b);
 double square_dist(const vector<double> &a, const vector<double> &b);
 double square_mod(const vector<double> &a);

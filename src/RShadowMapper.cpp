@@ -89,7 +89,7 @@ void RShadowMapper::init(){
 }
 
 
-void RShadowMapper::prepare_to_draw(glm::mat4 MVP){
+void RShadowMapper::prepare_to_draw(glm::mat4& MVP){
   glBindFramebuffer(GL_FRAMEBUFFER, fb);
   glViewport(0,0,SHADOWMAP_X,SHADOWMAP_Y);
   glEnable(GL_DEPTH_TEST);

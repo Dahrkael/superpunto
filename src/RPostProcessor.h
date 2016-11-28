@@ -1,12 +1,12 @@
 #ifndef RPSTPROCESSOR_H
 #define POSTPROCESSOR_H
-#include<defines.h>
+#include "defines.h"
 
 #include <GL/glew.h>
 #include <GL/gl.h>
 #include <GL/glext.h>
 
-#include<glib.h>
+#include "glib.h"
 
 
 class RPostProcessor{

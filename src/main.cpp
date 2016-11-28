@@ -121,7 +121,7 @@ void RGLContext::initBuffers(){
   else{Lbox[0][0] = 0.0; msgs[0] = " ";}
   std::stringstream is(line);
   
-  double temp[fc.nrows];
+  vector<double> temp(fc.nrows);
   vector<int> ctemp(fc.N[0],0);
   int frame = 0;
   int N = -1;
@@ -316,7 +316,7 @@ App::App(int argc, char** argv){
   glClearColor(bcolor[0], bcolor[1], bcolor[2], 1.0f);   
   glcontext.initialize();
   
-  font.loadFromFile("/usr/share/fonts/truetype/freefont/FreeSans.ttf");
+  font.loadFromFile("FreeSans.ttf");
   text.setFont(font); 
   text.setCharacterSize(24);
   text.setColor(sf::Color(255*(1-bcolor[0]), 255*(1-bcolor[1]), 255*(1-bcolor[2])));

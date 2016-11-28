@@ -22,7 +22,7 @@ class RShadowMapper{
   void init();
   void bind(){pr.use();}
   void attach_shadowmap(GLuint prr);
-  void prepare_to_draw(glm::mat4 model);
+  void prepare_to_draw(glm::mat4& model);
   void flush();
 
   bool isEnabled(){return this->enabled;}

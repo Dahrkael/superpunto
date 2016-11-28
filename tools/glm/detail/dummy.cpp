@@ -212,6 +212,7 @@ typename vecType::value_type normalizeDotC(vecType const & a, vecType const & b)
 	return glm::dot(a, b) * glm::inversesqrt(glm::dot(a, a) * glm::dot(b, b));
 }
 
+/*
 int main()
 {
 	glm::vec1 o(1);
@@ -230,3 +231,4 @@ int main()
 
 	return 0;
 }
+*/

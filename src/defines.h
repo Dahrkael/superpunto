@@ -1,6 +1,10 @@
 #ifndef DEFINES_H
 #define DEFINES_H
 
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
 #define fori(x,y) for(int i=x; i<y;i++)
 #define forj(x,y) for(int j=x; j<y;j++)
 #define fork(x,y) for(int k=x; k<y;k++)
