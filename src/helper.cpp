@@ -1,10 +1,12 @@
 #include "helper.h"
 
-//double pow(double x, int n){ 
-//  double res = x;
-//  for(int i=0;i<n-1;i++)res*=x; 
-//  return res;
-//}
+#ifndef _WIN32
+double pow(double x, int n){ 
+  double res = x;
+  for(int i=0;i<n-1;i++)res*=x; 
+  return res;
+}
+#endif
 double dist(const vector<double> &a, const vector<double> &b){
   double res = 0.0;
   fori(0,a.size()) res+= pow(a[i]-b[i],2);
